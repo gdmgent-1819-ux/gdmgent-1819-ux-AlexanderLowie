@@ -7,3 +7,267 @@
 @import url('components/buttons.css');
 @import url('components/forms.css');
 
+@font-face {
+  font-family:"summer fever";
+  src: url(../fonts/Summer_fever.ttf);
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: "Open Sans", helvetica, sans-serif;
+  }
+
+  .backgroundimg{
+  	background-image: url(../images/backgroundburger.jpg);
+  	background-size: cover;
+  	height:100vh;
+  	width: 100vw;
+  }
+
+  .indexbanner{
+    background-image: url(../images/burgeroftm.jpg);
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+  }
+
+  header, nav{
+  	width:100%;
+  }
+
+  nav{
+  	height:7rem;
+  	background-color:hsla(40,64%,56%,1);
+    display:flex;
+    text-transform: uppercase;
+  }
+
+  ul{
+    padding-top:2rem;
+  	list-style-type: none;
+  	display:flex;
+  	width:60%;
+  }
+
+  li{
+  	width:15%;
+  	text-align:center;
+  }
+
+a{
+	color:#FFF;
+	text-decoration: none;
+	border-bottom: 0.1rem solid hsla(40,64%,56%,1);
+}
+
+a:hover{
+	border-bottom: 0.1rem solid #000;
+  color:#000;
+}
+
+.logo{
+   padding:0.5rem;
+   width:8%;
+   border:none;
+   margin-left:5%;
+}
+.logo:hover{
+  border:none;
+}
+
+a img{
+  width:100%;
+}
+
+.guest{
+  width:4%;
+  height:50%;
+  padding-top:2rem;
+  margin-left:10%;
+}
+
+.logogroot{
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+}
+
+main{
+  text-align:center;
+}
+
+h1{
+  color:hsla(40,64%,56%,1);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.burgerotm{
+  display:flex;
+  width:100%;
+  background-color: hsla(40,64%,56%,1);
+  padding-top:2rem;
+  margin-top:4rem;
+}
+
+.burgerotm img{
+  width:40%;
+  height:40%;
+  margin-left:5%;
+  padding-right:5%;
+}
+
+.burgerotm .description{
+  text-align: left;
+  width:40%;
+  margin-left:5%;
+  margin-right:5%;
+  color:#FFF;
+}
+
+h2{
+  font-family: "summer fever";
+  font-size:5vw;
+}
+
+.button{
+  width:100%;
+  background-color: hsla(40,64%,56%,1);
+  padding: 2rem 0 2rem 0;
+}
+
+.button a{
+  background-color:#FFF;
+  border:0.1rem solid hsla(40,64%,56%,1);
+  border-radius: 3rem;
+  padding:0.5rem;
+  text-transform: uppercase;
+  color: hsla(40,64%,56%,1);
+  font-weight: bold;
+}
+
+.button a:hover{
+  border:0.1rem solid #FFF;
+  color:#FFF;
+  background-color:hsla(40,64%,56%,1);
+}
+
+footer{
+  display:flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+footer a,a:hover{
+  border:none;
+}
+
+h3{
+  font-size:1.5vw;
+}
+
+.social,.customerservice{
+  width:40%;
+  text-transform: uppercase;
+}
+
+.customerservice a{
+  color: hsla(40,64%,56%,1);
+}
+
+.customerservice a:hover{
+  color: #000;
+}
+
+.social{
+  text-align:right;
+}
+
+.social img{
+  width:10%;
+  margin:0 auto;
+  transition: all .2s ease-in-out;
+}
+
+.social img:hover{
+  transform: scale(1.1);
+}
+
+
+.fix{
+  display:flex;
+  padding-bottom:4rem;
+}
+
+.formimg,form{
+  width:40%;
+  margin:0 auto;
+}
+
+form{
+  padding:14rem 2rem 2rem 2rem;
+  text-align: left;
+  color:#FFF;
+}
+
+table{
+     border-collapse: collapse;
+     margin-bottom: 20px;
+  }
+  td{
+    padding-bottom: 10px;
+    width: 10%;
+  }
+  form input, textarea{
+    width: 300px;
+    border-radius: 0.5rem;
+  }
+  textarea{
+    resize: none;
+    width: 310px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    height: 100px;
+    border-radius: 1rem;
+  }
+  form button{
+    width: 310px;
+    margin-left:5rem;
+    background-color:white;
+    border-radius: 3rem;
+    color: hsla(40,64%,56%,1);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 0.1rem solid #FFF;
+  }
+
+  form button:hover{
+    color:#FFF;
+    border: 0.1rem solid #FFF;
+    background-color: hsla(40,64%,56%,0);
+
+  }
+
+  .ordertype{
+    width:10%;
+    margin: 1rem 1rem 1rem 3rem;
+  }
+
+  .formimg img{
+    width:70%;
+    padding-top:2rem;
+    border-radius: 5rem;
+    box-shadow: 0.2rem 0.2rem hsla(40,64%,56%,0.1);
+  }
+
+  /*MOBILE*/
+  @media only screen and (min-width: 320px) and (max-width: 480px){
+      nav ul {
+        display: block;
+        text-align: center;
+        line-height: 250%;
+        margin-right: 0px;
+        font-size: 110% !important;
+      }
+}

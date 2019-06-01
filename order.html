@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guys 'n Fries'</title>
+    <meta name="description" content="Burger restaurant">
+    <meta name="keywords" content="Burgers for the youth">
+    <meta name="author" content="Alexander Lowie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="backgroundimg">
+  <header>
+    <nav>
+      <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="Logo link to homepage"></a>
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+      <img  class="guest" src="assets/images/user.png" alt="Profile">
+    </nav>
+  </header>
+
+  <main class="fix">
+    <form action="post.php" method="post" id="form">
+			<table>
+				<tr>
+					<td><label for="Name">Name</label></td>
+					<td><input type="text" name="Name" id="name" required></td>
+				</tr>
+        <tr>
+					<td><label for="Adres">Adres</label></td>
+					<td><input type="text" name="Adres" id="adres" required></td>
+				</tr>
+				<tr>
+					<td><label for="Phone number">Phone number</label></td>
+					<td><input type="text" name="Phone number" id="number" required></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td><input type="email" name="email" id="email" required></td>
+				</tr>
+				<tr>
+					<td><label for="Order">Order</label></td>
+					<td><textarea name="Order" id="Order" required cols="40" rows="5"></textarea></td>
+				</tr>
+        <tr>
+          <td><input class="ordertype" type="radio" name="choice" value="Take away" checked> Take away</td>
+          <td><input class="ordertype" type="radio" name="choice" value="Delivery"> Delivery</td>
+        </tr>
+				<tr>
+				  <td colspan="2"><button type="submit">Order now</button></td>
+				</tr>
+			</table>
+		</form>
+    <div class="formimg">
+      <img src="assets/images/takeaway.jpg" alt="photo of a burger">
+    </div>
+  </main>
+
+  <footer id="orderfood">
+    <section class="customerservice">
+      <h3>Customer service</h3>
+      <p><a href="#">FAQ</a></p>
+      <p><a href="#">Payment methods</a></p>
+      <p><a href="#">Product details</a></p>
+      <p><a href="#">Register</a></p>
+    </section>
+
+    <section class="social">
+      <h4>Follow us</h4>
+      <div>
+        <a href="#"><img src="assets/images/fb.png" alt="logo link to Facebook"></a>
+        <a href="#"><img src="assets/images/insta.png" alt="logo link to Instagram"></a>
+        <a href="#"><img src="assets/images/twitter.png" alt="logo link to Twitter"></a>
+        <a href="#"><img src="assets/images/swarm.png" alt="logo link to Swarm"></a>
+      </div>
+    </section>
+
+  </footer>
+</body>
+
+</html>
