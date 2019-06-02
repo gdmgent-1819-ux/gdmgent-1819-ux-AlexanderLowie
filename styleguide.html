@@ -11,11 +11,98 @@
 <body>
 <div class="container">
     <h1 class="sg-title">Digital styleguide</h1>
+
     <h2 class="sg-subtitle">Kleuren</h2>
+      <p>kleur geel = hsla(40,64%,56%,1)</p>
+      <p>kleur wit = #FFF</p>
+      <p>kleur zwart = #000</p>
+
     <h2 class="sg-subtitle">Typografie</h2>
+      <h1> h1 = Helvetica</h1>
+      <h2>h2 = Summer Fever</h2>
+      <h3>H3 = Helvetica</h3>
+      <p>Tekst = Helvetica</p>
+
     <h2 class="sg-subtitle">Knopppen</h2>
+    <nav>
+      <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="Logo link to homepage"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+      <img class="guest" src="assets/images/user.png" alt="Profile">
+    </nav>
+
+    <div class="button">
+      <a href="order.html">Place your order here</a>
+    </div>
+
+    <section class="customerservice">
+      <h3>Customer service</h3>
+      <p><a href="#">FAQ</a></p>
+      <p><a href="#">Payment methods</a></p>
+      <p><a href="#">Product details</a></p>
+      <p><a href="#">Register</a></p>
+    </section>
+
+    <section class="social">
+      <h3>Follow us</h3>
+      <div>
+        <a href="#"><img src="assets/images/fb.png" alt="logo link to Facebook"></a>
+        <a href="#"><img src="assets/images/insta.png" alt="logo link to Instagram"></a>
+        <a href="#"><img src="assets/images/twitter.png" alt="logo link to Twitter"></a>
+        <a href="#"><img src="assets/images/swarm.png" alt="logo link to Swarm"></a>
+      </div>
+    </section>
+
+    <td colspan="2"><button type="submit">Order now</button></td>
+
     <h2 class="sg-subtitle">Formulier</h2>
+
+    <form action="post.php" method="post" id="form">
+      <table>
+        <tr>
+          <td><label for="Name">Name</label></td>
+          <td><input type="text" name="Name" id="name" required></td>
+        </tr>
+        <tr>
+          <td><label for="Adres">Adres</label></td>
+          <td><input type="text" name="Adres" id="adres" required></td>
+        </tr>
+        <tr>
+          <td><label for="Phonenumber">Phone number</label></td>
+          <td><input type="text" name="Phonenumber" id="number" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" name="email" id="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="Order">Order</label></td>
+          <td><textarea name="Order" id="Order" required cols="40" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td><input class="ordertype" type="radio" name="choice" value="Take away" checked> Take away</td>
+          <td><input class="ordertype" type="radio" name="choice" value="Delivery"> Delivery</td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="submit">Order now</button></td>
+        </tr>
+      </table>
+    </form>
+
     <h2 class="sg-subtitle">Componenten</h2>
+      <nav>
+        <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="Logo link to homepage"></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+        </ul>
+        <img class="guest" src="assets/images/user.png" alt="Profile">
+    </nav>
+
 </div>
 </body>
 </html>
